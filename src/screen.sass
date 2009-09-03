@@ -1,0 +1,87 @@
+@import compass/reset.sass
+@import compass/utilities/lists.sass
+@import blueprint/screen.sass
+@import blueprint/modules/typography.sass
+
+*:focus
+  outline: #ccc dotted medium
+  
+p
+  :margin-bottom 10px
+
++blueprint-typography
+
+#main_container
+  +container
+  :margin-top 20px
+  
+  #header, #tabs_container, #content, #footer
+    +column(24)
+  
+  #header
+    #logo
+      +column(18)
+    #contact_info
+      +column(6, true)
+      :font-size 18px
+      :text-align center
+  
+  #tabs_container
+    :margin-top 20px
+    .tab
+      +column(6)
+      &.last
+        +last
+      a
+        :padding 5px
+        :display block
+        :background-color #EBEBEB
+        :text-align center
+        &:hover
+          :background-color #CCC
+  
+  #content
+    :margin-top 20px
+    
+  #footer
+    :margin-top 20px
+    :padding-top 10px
+    :border-top 1px solid #EBEBEB
+    #footer_info
+      +column(12)
+      :text-align left
+    #footer_copyright
+      +push(2)
+      +column(10, true)
+      :text-align right
+  
+  .form_row
+    +clearfix
+    :margin-bottom 10px
+  .form_label
+    +column(7)
+    :text-align right
+    :font-weight 700
+  .form_field
+    +column(17, true)
+
+#prices
+  :background-color #EBEBEB
+  :padding 10px
+  :text-align center
+  p
+    :font-size 150%
+  .price_block
+    +clearfix
+    :margin-bottom 10px
+    .price
+      +column(8)
+      :font-size 18px
+      :text-align right
+    .description
+      :text-align left
+      +column(8, true)
+    
+.info
+  :text-align center
+  :margin 20px 0

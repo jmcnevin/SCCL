@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+*:focus { outline: 0; }
+
+body { line-height: 1em; color: black; background: #fff; }
+
+ol, ul { list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+img a { border: none; }
+
+*:focus { outline: #ccc dotted medium; }
+
+p { margin-bottom: 10px; }
+
+body { line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #333333; font-size: 75%; }
+
+h1 { font-weight: normal; color: #222222; font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h1 img { margin: 0; }
+
+h2 { font-weight: normal; color: #222222; font-size: 2em; margin-bottom: 0.75em; }
+
+h3 { font-weight: normal; color: #222222; font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+
+h4 { font-weight: normal; color: #222222; font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+
+h5 { font-weight: normal; color: #222222; font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+
+h6 { font-weight: normal; color: #222222; font-size: 1em; font-weight: bold; }
+
+h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+p { margin: 0 0 1.5em; }
+p img.left { display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.right { display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+
+a { text-decoration: underline; color: #000099; }
+a:visited { color: #000066; }
+a:focus { color: black; }
+a:hover { color: black; }
+a:active { color: #cc0099; }
+
+blockquote { margin: 1.5em; color: #666; font-style: italic; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+dfn { font-style: italic; font-weight: bold; }
+
+sup, sub { line-height: 0; }
+
+abbr, acronym { border-bottom: 1px dotted #666; }
+
+address { margin: 0 0 1.5em; font-style: italic; }
+
+del { color: #666; }
+
+pre { margin: 1.5em 0; white-space: pre; }
+
+pre, code, tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+li ul, li ol { margin: 0 1.5em; }
+
+ul { margin: 0 1.5em 1.5em 1.5em; list-style-type: disc; }
+
+ol { margin: 0 1.5em 1.5em 1.5em; list-style-type: decimal; }
+
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+
+dd { margin-left: 1.5em; }
+
+table { margin-bottom: 1.4em; width: 100%; }
+
+th { font-weight: bold; }
+
+thead th { background: #c3d9ff; }
+
+th, td, caption { padding: 4px 10px 4px 5px; }
+
+tr.even td { background: #e5ecf9; }
+
+tfoot { font-style: italic; }
+
+caption { background: #eee; }
+
+.quiet { color: #666666; }
+
+.loud { color: #111111; }
+
+#main_container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 20px; }
+#main_container { display: block; }
+#main_container #header, #main_container #tabs_container, #main_container #content, #main_container #footer { display: inline; float: left; margin-right: 10px; width: 950px; }
+* html #main_container #header, * html #main_container #tabs_container, * html #main_container #content, * html #main_container #footer { overflow-x: hidden; }
+#main_container #header #logo { display: inline; float: left; margin-right: 10px; width: 710px; }
+* html #main_container #header #logo { overflow-x: hidden; }
+#main_container #header #contact_info { display: inline; float: left; margin-right: 0; width: 230px; font-size: 18px; text-align: center; }
+* html #main_container #header #contact_info { overflow-x: hidden; }
+#main_container #tabs_container { margin-top: 20px; }
+#main_container #tabs_container .tab { display: inline; float: left; margin-right: 10px; width: 230px; }
+* html #main_container #tabs_container .tab { overflow-x: hidden; }
+#main_container #tabs_container .tab.last { margin-right: 0; }
+#main_container #tabs_container .tab a { padding: 5px; display: block; background-color: #EBEBEB; text-align: center; }
+#main_container #tabs_container .tab a:hover { background-color: #CCC; }
+#main_container #content { margin-top: 20px; }
+#main_container #footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #EBEBEB; }
+#main_container #footer #footer_info { display: inline; float: left; margin-right: 10px; width: 470px; text-align: left; }
+* html #main_container #footer #footer_info { overflow-x: hidden; }
+#main_container #footer #footer_copyright { display: inline; float: right; position: relative; margin: 0 -80px 1.5em 80px; display: inline; float: left; margin-right: 0; width: 390px; text-align: right; }
+* html #main_container #footer #footer_copyright { overflow-x: hidden; }
+#main_container .form_row { overflow: hidden; display: inline-block; margin-bottom: 10px; }
+#main_container .form_row { display: block; }
+#main_container .form_label { display: inline; float: left; margin-right: 10px; width: 270px; text-align: right; font-weight: 700; }
+* html #main_container .form_label { overflow-x: hidden; }
+#main_container .form_field { display: inline; float: left; margin-right: 0; width: 670px; }
+* html #main_container .form_field { overflow-x: hidden; }
+
+#prices { background-color: #EBEBEB; padding: 10px; text-align: center; }
+#prices p { font-size: 150%; }
+#prices .price_block { overflow: hidden; display: inline-block; margin-bottom: 10px; }
+#prices .price_block { display: block; }
+#prices .price_block .price { display: inline; float: left; margin-right: 10px; width: 310px; font-size: 18px; text-align: right; }
+* html #prices .price_block .price { overflow-x: hidden; }
+#prices .price_block .description { text-align: left; display: inline; float: left; margin-right: 0; width: 310px; }
+* html #prices .price_block .description { overflow-x: hidden; }
+
+.info { text-align: center; margin: 20px 0; }
