@@ -18,8 +18,6 @@ img a { border: none; }
 
 *:focus { outline: #ccc dotted medium; }
 
-p { margin-bottom: 10px; }
-
 body { line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #333333; font-size: 75%; }
 
 h1 { font-weight: normal; color: #222222; font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
