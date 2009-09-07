@@ -94,32 +94,51 @@ caption { background: #eee; }
 
 .loud { color: #111111; }
 
-#main_container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 20px; }
+h2 { font-family: Georgia, 'Times New Roman', serif; font-style: italic; border-bottom: 1px solid #666699; }
+
+body { background-image: url("/images/bg.png"); background-repeat: repeat-x; background-color: #FFF; }
+
+#main_container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 20px; background-color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 10px 10px 10px #000; -moz-box-shadow: 0 0 10px #000; }
 #main_container { display: block; }
 #main_container #header, #main_container #tabs_container, #main_container #content, #main_container #footer { display: inline; float: left; margin-right: 10px; width: 950px; }
 * html #main_container #header, * html #main_container #tabs_container, * html #main_container #content, * html #main_container #footer { overflow-x: hidden; }
+#main_container #header { margin-top: 10px; }
 #main_container #header #logo { display: inline; float: left; margin-right: 10px; width: 710px; }
 * html #main_container #header #logo { overflow-x: hidden; }
-#main_container #header #contact_info { display: inline; float: left; margin-right: 0; width: 230px; font-size: 18px; text-align: center; }
+#main_container #header #contact_info { display: inline; float: left; margin-right: 0; width: 230px; font-size: 18px; text-align: center; background-color: #FFC; padding: 5px 0; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; }
 * html #main_container #header #contact_info { overflow-x: hidden; }
-#main_container #tabs_container { margin-top: 20px; }
-#main_container #tabs_container .tab { display: inline; float: left; margin-right: 10px; width: 230px; }
-* html #main_container #tabs_container .tab { overflow-x: hidden; }
-#main_container #tabs_container .tab.last { margin-right: 0; }
-#main_container #tabs_container .tab a { padding: 5px; display: block; background-color: #EBEBEB; text-align: center; }
+#main_container #tabs_container { margin-top: 20px; margin-bottom: 1px; }
+#main_container #tabs_container .tab { width: 237px; float: left; }
+#main_container #tabs_container .tab.first { margin-left: 1px; }
+#main_container #tabs_container .tab.last { margin-right: 1px; }
+#main_container #tabs_container .tab a { height: 34px; padding: 0 5px; display: block; background-color: #EBEBEB; text-align: center; color: transparent; background-image: url(/images/tabs.png); background-repeat: no-repeat; }
 #main_container #tabs_container .tab a:hover { background-color: #CCC; }
+#main_container #tabs_container .tab a#home_tab_link { background-position: 0 -34px; }
+#main_container #tabs_container .tab a#home_tab_link:hover { background-position: -237px -34px; }
+#main_container #tabs_container .tab a#home_tab_link.current { background-position: -474px -34px !important; }
+#main_container #tabs_container .tab a#about_tab_link { background-position: 0 -102px; }
+#main_container #tabs_container .tab a#about_tab_link:hover { background-position: -237px -102px; }
+#main_container #tabs_container .tab a#about_tab_link.current { background-position: -474px -102px !important; }
+#main_container #tabs_container .tab a#payments_tab_link { background-position: 0 0; }
+#main_container #tabs_container .tab a#payments_tab_link:hover { background-position: -237px 0; }
+#main_container #tabs_container .tab a#payments_tab_link.current { background-position: -474px 0 !important; }
+#main_container #tabs_container .tab a#contact_tab_link { background-position: 0 -68px; }
+#main_container #tabs_container .tab a#contact_tab_link:hover { background-position: -237px -68px; }
+#main_container #tabs_container .tab a#contact_tab_link.current { background-position: -474px -68px !important; }
+#main_container #photo { display: inline; float: left; margin-right: 10px; width: 950px; height: 200px; background-image: url(/images/photo1.jpg); background-position: 1px 0; background-repeat: no-repeat; }
+* html #main_container #photo { overflow-x: hidden; }
 #main_container #content { margin-top: 20px; }
-#main_container #footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #EBEBEB; }
+#main_container #content .headlines p { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; text-align: center; }
+#main_container .content_container { padding: 0 20px; }
+#main_container #footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #666699; background-color: #eaeaea; border-radius-bottomleft: 10px; border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; }
 #main_container #footer #footer_info { display: inline; float: left; margin-right: 10px; width: 470px; text-align: left; }
 * html #main_container #footer #footer_info { overflow-x: hidden; }
-#main_container #footer #footer_copyright { display: inline; float: right; position: relative; margin: 0 -80px 1.5em 80px; display: inline; float: left; margin-right: 0; width: 390px; text-align: right; }
+#main_container #footer #footer_copyright { display: inline; float: right; position: relative; margin: 0 -80px 1.5em 80px; display: inline; float: left; margin-right: 0; width: 390px; text-align: right; font-size: 10px; }
 * html #main_container #footer #footer_copyright { overflow-x: hidden; }
 #main_container .form_row { overflow: hidden; display: inline-block; margin-bottom: 10px; }
 #main_container .form_row { display: block; }
-#main_container .form_label { display: inline; float: left; margin-right: 10px; width: 270px; text-align: right; font-weight: 700; }
-* html #main_container .form_label { overflow-x: hidden; }
-#main_container .form_field { display: inline; float: left; margin-right: 0; width: 670px; }
-* html #main_container .form_field { overflow-x: hidden; }
+#main_container .form_label { width: 200px; margin-right: 10px; float: left; text-align: right; font-weight: 700; }
+#main_container .form_field { float: left; width: 400px; }
 
 #prices { background-color: #EBEBEB; padding: 10px; text-align: center; }
 #prices p { font-size: 150%; }
@@ -131,3 +150,5 @@ caption { background: #eee; }
 * html #prices .price_block .description { overflow-x: hidden; }
 
 .info { text-align: center; margin: 20px 0; }
+
+label.error { color: red; font-size: 80%; margin-left: 10px; font-weight: bold; }

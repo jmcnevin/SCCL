@@ -1,16 +1,14 @@
 <h2>Contact Us</h2>
 
-<%# order@attorneysforcourt.com %>
+<p>Contact <strong>Attorneys For Court</strong> today at <strong>(321) 206-8108</strong> or fill out our online contact form.</p>
 
-<p>Contact Attorneys For Court today at (321) 206-8108 or fill out our online contact form.</p>
-
-<form method="post" action="/contact">
+<form method="post" action="/contact" id="contact_form">
   <div class="form_row">
     <div class="form_label">
       <label for="name">Name</label>
     </div>
     <div class="form_field">
-      <input type="text" name="name" id="name" maxlength="50" size="20" /> (required)
+      <input type="text" name="name" id="name" maxlength="50" size="20" class="required" />
     </div>
   </div>
 
@@ -19,7 +17,7 @@
       <label for="email">Email</label>
     </div>
     <div class="form_field">
-      <input type="text" name="email" id="email" maxlength="50" size="20" /> (required)
+      <input type="text" name="email" id="email" maxlength="50" size="20" class="required email" />
     </div>
   </div>
 
@@ -28,7 +26,7 @@
       <label for="phone">Phone</label>
     </div>
     <div class="form_field">
-      <input type="text" name="phone" id="phone" maxlength="20" size="20" /> (required)
+      <input type="text" name="phone" id="phone" maxlength="20" size="20" class="required phone" />
     </div>
   </div>
 
@@ -46,7 +44,7 @@
       <label for="date">Pre-Trial Conference/Mediation or Trial Date</label>
     </div>
     <div class="form_field">
-      <input type="text" name="date" id="name" maxlength="50" size="20" />
+      <input type="text" name="date" id="date" maxlength="50" size="20" class="date" />
     </div>
   </div>
 

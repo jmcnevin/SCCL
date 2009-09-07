@@ -8,42 +8,120 @@
   
 +blueprint-typography
 
+h2
+  :font-family Georgia, 'Times New Roman', serif
+  :font-style italic
+  :border-bottom 1px solid #666699
+
+body
+  :background-image url("/images/bg.png")
+  :background-repeat repeat-x
+  :background-color #FFF
+  
 #main_container
   +container
   :margin-top 20px
+  :background-color #FFF
+  :border-radius 10px
+  :-moz-border-radius 10px
+  :-webkit-border-radius 10px
+  :box-shadow 10px 10px 10px #000
+  :-moz-box-shadow 0 0 10px #000
   
   #header, #tabs_container, #content, #footer
     +column(24)
   
   #header
+    :margin-top 10px
     #logo
       +column(18)
     #contact_info
       +column(6, true)
       :font-size 18px
       :text-align center
-  
+      :background-color #FFC
+      :padding 5px 0
+      :-moz-border-radius-topleft 10px
+      :-webkit-border-top-left-radius 10px
+      :-moz-border-radius-bottomleft 10px
+      :-webkit-border-bottom-left-radius 10px
+      
   #tabs_container
     :margin-top 20px
+    :margin-bottom 1px
     .tab
-      +column(6)
+      :width 237px
+      :float left
+      &.first
+        :margin-left 1px
       &.last
-        +last
+        :margin-right 1px
       a
-        :padding 5px
+        :height 34px
+        :padding 0 5px
         :display block
         :background-color #EBEBEB
         :text-align center
+        :color transparent
         &:hover
           :background-color #CCC
-  
+        :background-image url(/images/tabs.png)
+        :background-repeat no-repeat
+        &#home_tab_link
+          :background-position 0 -34px
+          &:hover
+            :background-position -237px -34px
+          &.current
+            :background-position -474px -34px !important
+        &#about_tab_link
+          :background-position 0 -102px
+          &:hover
+            :background-position -237px -102px
+          &.current
+            :background-position -474px -102px !important
+        &#payments_tab_link
+          :background-position 0 0
+          &:hover
+            :background-position -237px 0
+          &.current
+            :background-position -474px 0 !important
+        &#contact_tab_link
+          :background-position 0 -68px
+          &:hover
+            :background-position -237px -68px
+          &.current
+            :background-position -474px -68px !important
+          
+      
+  #photo
+    +column(24)
+    :height 200px
+    :background-image url(/images/photo1.jpg)
+    :background-position 1px 0
+    :background-repeat no-repeat
+    
   #content
     :margin-top 20px
+    .headlines
+      p
+        :font-family Georgia, 'Times New Roman', serif
+        :font-size 20px
+        :text-align center
+        
+  .content_container
+    :padding 0 20px
     
   #footer
     :margin-top 20px
     :padding-top 10px
-    :border-top 1px solid #EBEBEB
+    :border-top 1px solid #666699
+    :background-color #eaeaea
+    :border-radius-bottomleft 10px
+    :border-radius-bottomright 10px
+    :-moz-border-radius-bottomleft 10px
+    :-webkit-border-bottom-left-radius 10px
+    :-moz-border-radius-bottomright 10px
+    :-webkit-border-bottom-right-radius 10px
     #footer_info
       +column(12)
       :text-align left
@@ -51,16 +129,20 @@
       +push(2)
       +column(10, true)
       :text-align right
+      :font-size 10px
   
   .form_row
     +clearfix
     :margin-bottom 10px
   .form_label
-    +column(7)
+    :width 200px
+    :margin-right 10px
+    :float left
     :text-align right
     :font-weight 700
   .form_field
-    +column(17, true)
+    :float left
+    :width 400px
 
 #prices
   :background-color #EBEBEB
@@ -82,3 +164,9 @@
 .info
   :text-align center
   :margin 20px 0
+  
+label.error
+  :color red
+  :font-size 80%
+  :margin-left 10px
+  :font-weight bold
